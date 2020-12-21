@@ -1,0 +1,21 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ResServerApplication",
+            "request": "launch",
+            "mainClass": "com.example.res_server.ResServerApplication",
+            "projectName": "res_server"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-AuthServerApplication<auth_server>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.example.auth_server.AuthServerApplication",
+            "projectName": "auth_server",
+            "args": ""
+        }
+    ]
+}

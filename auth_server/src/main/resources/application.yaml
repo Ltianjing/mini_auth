@@ -1,0 +1,23 @@
+jwt:  
+    keyStorePath: "./my-test-key.jks"
+    keyStorePassword: "123456"
+    keyAlias: "jwt-key"
+    expiration: 60
+
+server:
+  port: 8085
+
+spring:
+  jpa: 
+    hibernate:
+      ddl-auto: update
+  datasource: 
+    url: jdbc:mysql://localhost:3306/test?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: 314159
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: http://localhost:8085/auth/jwt
+ 
